@@ -21,10 +21,10 @@ print_r(array_replace($a1,$a2));
  * Result
 Array
 (
-    [ma] => 0
-    [ba] => 1
-    [em] => 2
+    [0] => blue
+    [1] => yellow
 )
+
 
  * */
 $a1=array("a"=>"red","b"=>"green");
@@ -34,9 +34,9 @@ print_r(array_replace($a1,$a2));
  * Result
 Array
 (
-    [ma] => 0
-    [ba] => 1
-    [em] => 2
+    [a] => orange
+    [b] => green
+    [0] => burgundy
 )
 
  * */
@@ -49,12 +49,11 @@ print_r(array_replace($a1,$a2));
  * Result
 Array
 (
-    [ma] => 0
-    [ba] => 1
-    [em] => 2
+    [a] => orange
+    [0] => green
+    [b] => burgundy
 )
-
- * */
+*/
 
 $a1=array("red","green");
 $a2=array("blue","yellow");
@@ -66,9 +65,8 @@ print_r(array_replace($a1,$a2,$a3));
  * Result
 Array
 (
-    [ma] => 0
-    [ba] => 1
-    [em] => 2
+    [0] => orange
+    [1] => burgundy
 )
 
  * */
@@ -82,9 +80,10 @@ print_r(array_replace($a1,$a2));
  * Result
 Array
 (
-    [ma] => 0
-    [ba] => 1
-    [em] => 2
+    [0] => orange
+    [1] => green
+    [2] => blue
+    [3] => burgundy
 )
 
  * */
