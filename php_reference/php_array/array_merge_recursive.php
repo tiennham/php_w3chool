@@ -7,13 +7,36 @@ The array_merge() function merges one or more arrays. If they have the same key,
 
 */
 
-$vk_family = array("ma_vk","ba_vk","em_vk");
-$ck_family = array("ma_ck","ba_ck","em_ck");
+$vk_family = array("ma"=>"ma_vk","ba"=>"ba_vk","em"=>"em_vk");
+$ck_family = array("ma"=>"ma_ck","ba"=>"ba_ck","em"=>"em_ck");
 
 print_r(array_merge_recursive($vk_family,$ck_family));
 
 /*
  * Result
+
+Array
+(
+    [ma] => Array
+        (
+            [0] => ma_vk
+            [1] => ma_ck
+        )
+
+    [ba] => Array
+        (
+            [0] => ba_vk
+            [1] => ba_ck
+        )
+
+    [em] => Array
+        (
+            [0] => em_vk
+            [1] => em_ck
+        )
+
+)
+
 
  * */
 
