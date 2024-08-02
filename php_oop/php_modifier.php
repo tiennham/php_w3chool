@@ -17,7 +17,7 @@ class Fruit {
 
 $mango = new Fruit();
 $mango->set_name('Mango'); // OK
-$mango->set_color('Yellow'); // ERROR
-$mango->set_weight('300'); // ERROR
+//$mango->set_color('Yellow'); // ERROR
+//$mango->set_weight('300'); // ERROR
 
 
