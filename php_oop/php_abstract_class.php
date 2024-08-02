@@ -6,6 +6,15 @@ abstract class Car {
     $this->name = $name;
   }
   abstract public function intro() : string;
+
+  public function fill_fuel($fuel) : void
+  {
+      if ($fuel) {
+          echo $fuel;
+      } else {
+          echo "Gasoline";
+      }
+  }
 }
 
 // Child classes
